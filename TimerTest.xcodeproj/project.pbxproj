@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1206E001F94A9440008FCC9 /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1206DFF1F94A9440008FCC9 /* NSTimerViewController.m */; };
+		E1206E031F94B48F0008FCC9 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1206E021F94B48F0008FCC9 /* CompareViewController.m */; };
 		E15919621F5C0D0100E515D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15919611F5C0D0100E515D0 /* main.m */; };
 		E15919651F5C0D0100E515D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15919641F5C0D0100E515D0 /* AppDelegate.m */; };
 		E15919681F5C0D0100E515D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15919671F5C0D0100E515D0 /* ViewController.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1206DFE1F94A9440008FCC9 /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
+		E1206DFF1F94A9440008FCC9 /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
+		E1206E011F94B48F0008FCC9 /* CompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
+		E1206E021F94B48F0008FCC9 /* CompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompareViewController.m; sourceTree = "<group>"; };
 		E159195D1F5C0D0100E515D0 /* TimerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15919611F5C0D0100E515D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E15919631F5C0D0100E515D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +68,10 @@
 				E15919641F5C0D0100E515D0 /* AppDelegate.m */,
 				E15919661F5C0D0100E515D0 /* ViewController.h */,
 				E15919671F5C0D0100E515D0 /* ViewController.m */,
+				E1206DFE1F94A9440008FCC9 /* NSTimerViewController.h */,
+				E1206DFF1F94A9440008FCC9 /* NSTimerViewController.m */,
+				E1206E011F94B48F0008FCC9 /* CompareViewController.h */,
+				E1206E021F94B48F0008FCC9 /* CompareViewController.m */,
 				E15919691F5C0D0100E515D0 /* Main.storyboard */,
 				E159196C1F5C0D0100E515D0 /* Assets.xcassets */,
 				E159196E1F5C0D0100E515D0 /* LaunchScreen.storyboard */,
@@ -151,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1206E031F94B48F0008FCC9 /* CompareViewController.m in Sources */,
 				E15919681F5C0D0100E515D0 /* ViewController.m in Sources */,
 				E15919651F5C0D0100E515D0 /* AppDelegate.m in Sources */,
 				E15919621F5C0D0100E515D0 /* main.m in Sources */,
+				E1206E001F94A9440008FCC9 /* NSTimerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +288,10 @@
 				DEVELOPMENT_TEAM = 9H8HHDDVV5;
 				INFOPLIST_FILE = TimerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = baidu.com.TimerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -312,6 +328,7 @@
 				E15919761F5C0D0100E515D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
